@@ -1,0 +1,333 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color:  white;
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+a {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  /* color: white; */
+}
+span:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+
+
+.typewriter   {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1px solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 3px; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end) infinite ,
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+h1,h2,h3,h4,h5,h6{
+  color:  	#1a8cff;
+  font-family: monaco,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+  font-size:50px;
+}
+#banner{
+  text-align: left;
+  vertical-align: middle;
+  color: white;
+  background-color: 	#4da6ff;
+  border-radius: 5px;
+  margin-bottom: -15px;
+  
+}
+.fa {
+  padding: 10px 15px 0px 10px;
+  
+}
+#hirebtn{
+  padding: 10px;
+  margin-top: 5px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+#about {
+  color: black;
+  /* height: 100vh; */
+  background-color: white;
+  /* width: 75%; */
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+#skill {
+  margin-top: 20px;
+  color: black;
+  /* height: 60vh; */
+  background-color: white;
+  /* width: 100%; */
+  /* border-radius: 5px; */
+}
+.progress-bar {
+  background-color:  	#1a8cff;
+  
+ 
+}
+.progress {
+  border-width: 5px;
+  border-radius: 15px;
+  border:1px solid  #1a8cff; 
+} 
+#work {
+  margin-top: 20px;
+  color: black;
+  /* height: 80vh; */
+  background-color: white;
+  /* width: 75%; */
+  /* border-radius: 5px; */
+}
+
+div.img {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}	
+
+div.img:hover {
+  border: 1px solid #777;
+}
+#testimony{
+  margin-top: 20px;
+  color: white;
+  /* height: 70vh; */
+  background-color: 	#4da6ff;
+  /* width: 75%; */
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+#footer{
+  margin-top: 20px;
+  color: white;
+  background-color: 	#4da6ff;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+ .social a{
+   color: #1a8cff;
+ }
+.social{
+
+  margin-top:0px;
+  font-size:14px;
+  color: #1a8cff;
+ }
+.social2 {
+  margin-top:0px;
+  font-size: 14px;
+  color: 	white;
+
+} 
+.social3 {
+  margin-top:0px;
+  font-size:14px;
+  color:white;
+}
+ .social4{
+  font-size:20px;
+  color: white;
+  margin-top: 5%;
+  
+}
+.social5{
+  font-size:20px;
+  color:white;
+  margin-top: 0px;
+}
+  a{
+  text-decoration: none;
+  color: white;
+}
+.social:hover{
+  text-decoration: none;
+  color: black;
+}
+#contact {
+  margin-top: 20px;
+  color: #1a8cff;
+  /* height: 70vh; */
+  background-color: white;
+}
+form 
+{ max-width:420px;
+  margin:50px auto; 
+}
+
+.feedback-input {
+  color: #1a8cff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+  border-bottom:1px solid #1a8cff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid  #4da6ff; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 50%;
+  background:white;
+  border-radius:5px;
+  border:1px solid #4da6ff;
+  cursor:pointer;
+  color: #4da6ff;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  vertical-align: middle;
+}
+[type="submit"]:hover {
+background:  #4da6ff;
+color: white;
+}
+section{
+  margin: auto;
+  max-width: 1000px;
+}
+
+.details li{
+  list-style: none;
+}
+
+.box{
+  background-color:  	white;
+  color: 	#1a8cff;
+  margin-bottom:30px;
+  border-radius:50%;
+  text-align:center;
+  font-size: 14px;
+  font-style: bold;
+}
+
+.box2{
+  background-color:  #4da6ff;
+  color: 	white;
+  margin-bottom:30px;
+  border-radius:50%;
+  text-align:center;
+  font-size: 14px;
+  font-style: bold;
+}
+/* }
+.box2:hover{
+  background-color: white;
+  color: #1a8cff;
+  border: 1px solid #1a8cff;
+}  */
+.box2 a{
+  text-decoration: none;
+}
+.box2 a:hover{
+  color: #fff;
+}
+
+
+/* preloader section */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #f9f9f9;
+}
+.sk-spinner-rotating-plane.sk-spinner {
+	width: 50px;
+	height: 50px;
+	background-color: #4da6ff;
+	border-radius: 50%;
+	-webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+	animation: sk-rotatePlane 1.2s infinite ease-in-out;
+}
+@keyframes sk-rotatePlane {
+0% {
+-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+}
+50% {
+-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+}
+100% {
+-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+}
+}
