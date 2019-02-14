@@ -45,10 +45,10 @@ span:hover {
   border-right: 1px solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 3px; /* Adjust as needed */
+  letter-spacing: 4px; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end) infinite ,
-    blink-caret .5s step-end infinite;
+    typing 6.5s steps(45, end) infinite ,
+    blink-caret .2s step-end infinite;
 }
 
 /* The typing effect */
@@ -261,6 +261,7 @@ section{
   text-align:center;
   font-size: 14px;
   font-style: bold;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0,8);
 }
 
 .box2{
@@ -271,6 +272,7 @@ section{
   text-align:center;
   font-size: 14px;
   font-style: bold;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0,8);
 }
 /* }
 .box2:hover{
